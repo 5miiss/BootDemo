@@ -1,5 +1,6 @@
-package com.example.demo.Buisness.Services;
+package com.example.demo.Buisness.Services.interfaces;
 
+import com.example.demo.Presentation.DTOs.RequestDTOs.UserRequestDto;
 import com.example.demo.Repository.Dao.interfaces.UserDao;
 import com.example.demo.Repository.Entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,12 +8,8 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class UserService {
-    @Autowired
-    private UserDao userDao;
+public interface UserService {
 
-    public void addUser(User u){
 
-        userDao.save(u);
-    }
+    public void addUser(UserRequestDto user);
 }
