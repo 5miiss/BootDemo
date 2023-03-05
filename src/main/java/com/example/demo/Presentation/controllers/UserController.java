@@ -15,11 +15,11 @@ public class UserController {
         return "hello";
     }
 
-    // @PostMapping("/users")
-    // public User addUser(@RequestBody User u){
+    @PostMapping("/users")
+    public User addUser(@RequestBody User u){
 
-    //     userService.addUser(u);
-    //     return u;
-    // }
+        userService.addUser(u);
+        return u;
+    }
 
 }

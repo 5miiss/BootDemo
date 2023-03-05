@@ -32,7 +32,8 @@ public class User  implements java.io.Serializable {
      private int id;
      private String username;
      private String password;
-     private String name;
+     private String firstName;
+     private String lastName;
      private String gender;
      private String email;
      private String phone;
@@ -48,10 +49,12 @@ public class User  implements java.io.Serializable {
     }
 
 	
-    public User( String username, String password, String name, String gender, String email, String phone, byte isAdmin) {
+    public User( String username, String password, String firstName,String lastNAme, String gender, String email, String phone, byte isAdmin) {
         this.username = username;
         this.password = password;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastNAme;
+
         this.gender = gender;
         this.email = email;
         this.phone = phone;
